@@ -320,7 +320,7 @@ worker_log_server_port = 8793
 broker_url = sqla+mysql://airflow:airflow@localhost:3306/airflow
 
 # Another key Celery setting
-celery_result_backend = db+mysql://airflow:airflow@localhost:3306/airflow
+result_backend = db+mysql://airflow:airflow@localhost:3306/airflow
 
 # Celery Flower is a sweet UI for Celery. Airflow has a shortcut to start
 # it `airflow flower`. This defines the IP that Celery Flower runs on
